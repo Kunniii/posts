@@ -3,6 +3,7 @@ title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
 pubDate: "Jul 01 2022"
 heroImage: "/placeholder-hero.jpg"
+author: "Kunnii"
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
@@ -51,7 +52,7 @@ The blockquote element represents content that is quoted from another source, op
 
 ## Tables
 
-| Italics   | Bold     | Code   |
+| Italics   | Bold   | Code   |
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
@@ -61,11 +62,11 @@ The blockquote element represents content that is quoted from another source, op
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
+  <meta charset="utf-8" />
+  <title>Example HTML5 Document</title>
   </head>
   <body>
-    <p>Test</p>
+  <p>Test</p>
   </body>
 </html>
 ```

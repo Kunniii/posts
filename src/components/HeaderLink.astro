@@ -16,9 +16,15 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 	a {
 		display: inline-block;
 		text-decoration: none;
+    padding: 0 1rem 0 1rem;
+    border-radius: 15px;
+    border: #3273dc solid 1px;
+    width: 100px;
+    text-align: center;
 	}
 	a.active {
 		font-weight: bolder;
-		text-decoration: underline;
+    background-color: #3273dc;
+    color: white;
 	}
 </style>
