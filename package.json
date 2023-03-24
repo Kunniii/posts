@@ -2,6 +2,7 @@
   "name": "kunniii-posts",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "kunniii.github.io/posts",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",

@@ -28,6 +28,9 @@ const { title, description, pubDate, updatedDate, heroImage, author } = Astro.pr
       .last-updated-on {
         font-style: italic;
       }
+      .card {
+        @apply border rounded-xl shadow;
+      }
     </style>
   </head>
 
@@ -40,22 +43,26 @@ const { title, description, pubDate, updatedDate, heroImage, author } = Astro.pr
             <img
               width={720}
               height={360}
+              class="card"
               src={heroImage}
               alt=""
             />
           )
         }
-        <h1 class="title font-bold">{title}</h1>
-        <FormattedDate date={pubDate} /> - {author || "Kunniii"}
-        {
-          updatedDate && (
-            <div class="last-updated-on">
-              Last updated on <FormattedDate date={updatedDate} />
-            </div>
-          )
-        }
-        <hr />
-        <div class="text-justify">
+        <div class="card px-5 py-2 my-3">
+          <h1 class="title font-bold">{title}</h1>
+          <div class="text-right text-xs">
+            <FormattedDate date={pubDate} /> - {author || "Kunniii"}
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Last updated on <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
+          </div>
+        </div>
+        <div class="card text-justify p-5">
           <slot />
         </div>
       </article>

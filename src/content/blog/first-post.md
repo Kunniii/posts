@@ -6,6 +6,8 @@ heroImage: "/placeholder-hero.jpg"
 author: "Kunnii"
 ---
 
+## Hello this is my first post
+
 ```py
 print('hellow' if 10 == True else "OK")
 ```
